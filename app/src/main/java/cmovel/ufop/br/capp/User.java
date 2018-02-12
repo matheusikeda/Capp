@@ -12,6 +12,7 @@ public class User {
     private String gender;
     private ArrayList<Car> cars = new ArrayList<>();
     private ArrayList<CarRepairShop> carRepairShops = new ArrayList<>();
+    private ArrayList<AutoMaintenance> autoMaintenances = new ArrayList<>();
 
     public User(){
 
@@ -61,5 +62,13 @@ public class User {
 
     public void setCarRepairShops(ArrayList<CarRepairShop> carRepairShops) {
         this.carRepairShops = carRepairShops;
+    }
+
+    public ArrayList<AutoMaintenance> getAutoMaintenances() {
+        return autoMaintenances;
+    }
+
+    public void setAutoMaintenances(ArrayList<AutoMaintenance> autoMaintenances) {
+        this.autoMaintenances = autoMaintenances;
     }
 }

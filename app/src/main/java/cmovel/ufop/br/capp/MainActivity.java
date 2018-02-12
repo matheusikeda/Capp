@@ -96,7 +96,8 @@ public class MainActivity extends AppCompatActivity
             Intent it = new Intent(this, EditUserActivity.class);
             startActivity(it);
         } else if (id == R.id.nav_share) {
-
+            Intent it = new Intent(this, AutoMaintenanceActivity.class);
+            startActivity(it);
         } else if (id == R.id.nav_send) {
 
         }
