@@ -33,30 +33,24 @@
         android:inputType="textPersonName" />
 
     <RadioGroup
-        android:id="@+id/radioGroup1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rBFemale"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:checked="false"
+            android:text="Female"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:orientation="horizontal">
-
-            <RadioButton
-                android:id="@+id/radioButtonFemale"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Female"/>
-
-            <RadioButton
-                android:id="@+id/radioButtonMale"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Male"/>
-        </LinearLayout>
+        <RadioButton
+            android:id="@+id/rBMale"
+            android:layout_width="114dp"
+            android:layout_marginTop="16dp"
+            android:layout_height="47dp"
+            android:checked="false"
+            android:text="Male"/>
     </RadioGroup>
 
     <Button

@@ -11,6 +11,7 @@ public class User {
     private String name;
     private String gender;
     private ArrayList<Car> cars = new ArrayList<>();
+    private ArrayList<CarRepairShop> carRepairShops = new ArrayList<>();
 
     public User(){
 
@@ -52,5 +53,13 @@ public class User {
 
     public void setCars(ArrayList<Car> cars) {
         this.cars = cars;
+    }
+
+    public ArrayList<CarRepairShop> getCarRepairShops() {
+        return carRepairShops;
+    }
+
+    public void setCarRepairShops(ArrayList<CarRepairShop> carRepairShops) {
+        this.carRepairShops = carRepairShops;
     }
 }

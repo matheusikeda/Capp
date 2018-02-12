@@ -7,6 +7,7 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -48,7 +49,17 @@ public class RegisterUserActivity extends AppCompatActivity {
 
         user = new User(cpf,name);
 
+        RadioButton  rbFemale = findViewById(R.id.rBFemale);
 
+        RadioButton rbMale = findViewById(R.id.rBMale);
+
+        if(rbFemale.isChecked()){
+
+            user.setGender("Female");
+        }else if(rbMale.isChecked()){
+
+            user.setGender("Male");
+        }
 
         saveUser(user);
 

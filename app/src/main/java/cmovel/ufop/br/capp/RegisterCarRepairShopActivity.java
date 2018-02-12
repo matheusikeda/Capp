@@ -18,7 +18,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class RegisterCarActivity extends AppCompatActivity {
+public class RegisterCarRepairShopActivity extends AppCompatActivity {
 
     private DatabaseReference firebase;
     private FirebaseUser auth;
@@ -26,21 +26,15 @@ public class RegisterCarActivity extends AppCompatActivity {
     private ValueEventListener valueEventListener;
 
     private User user;
-    private EditText etModel;
-    private EditText etLicense;
-    private EditText etMake;
-    private EditText etYear;
-    private Spinner engines;
-    private Spinner transmissions;
-
-    private static final String[] ENGINE = {"1.0","1.2","1.4","1.8","2.0"};
-    private static final String[] TRANSMISSIONS = {"Automanual","Automatic"};
+    private EditText etName;
+    private EditText etLocation;
+    private EditText etPhone;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register_car);
+        setContentView(R.layout.activity_register_car_repair_shop);
         mAuth = FirebaseAuth.getInstance();
         auth = mAuth.getCurrentUser();
 
@@ -62,52 +56,34 @@ public class RegisterCarActivity extends AppCompatActivity {
         };
 
         ActionBar supportActionBar = getSupportActionBar();
-        supportActionBar.setTitle("Register Car");
+        supportActionBar.setTitle("Register Car Repair Shop");
 
-        initSpinner();
     }
 
-    private void initSpinner(){
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item,ENGINE);
-        Spinner engine = findViewById(R.id.eSpinner);
-        engine.setAdapter(adapter);
+    public void registerCarRepairShop(View view) {
+        etName = findViewById(R.id.editName);
+        etLocation = findViewById(R.id.editLocation);
+        etPhone = findViewById(R.id.editPhone);
 
-        ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item,TRANSMISSIONS);
-        Spinner transmission = findViewById(R.id.tSpinner);
-        transmission.setAdapter(adapter2);
-    }
+        final String name = etName.getText().toString();
+        final String location = etLocation.getText().toString();
+        final String phone = etPhone.getText().toString();
 
+        CarRepairShop carRepairShop = new CarRepairShop(name,location,phone);
 
-    public void registerCar(View view) {
-        etModel = findViewById(R.id.editCarModel);
-        etLicense = findViewById(R.id.editLicensePlate);
-        etMake = findViewById(R.id.editMake);
-        etYear = findViewById(R.id.editYear);
-        engines = findViewById(R.id.eSpinner);
-        transmissions = findViewById(R.id.tSpinner);
-
-        final String model = etModel.getText().toString();
-        final String license = etLicense.getText().toString();
-        final String make = etMake.getText().toString();
-        final String year = etYear.getText().toString();
-        final String engine = (String) engines.getSelectedItem();
-        final String transmission = (String) transmissions.getSelectedItem();
-
-        Car car = new Car(license, model, make,engine, transmission,year);
-
-        user.getCars().add(car);
-        saveCar(user);
+        user.getCarRepairShops().add(carRepairShop);
+        saveCarRepairShop(user);
 
         finish();
     }
 
-    private boolean saveCar(User user) {
+    private boolean saveCarRepairShop(User user) {
         try {
             firebase = FirebaseDatabase.getInstance().getReference()
                     .child("user").child(auth.getUid().toString()).child("users");
 
             firebase.child("" + user.getCpf()).setValue(user);
-            Toast.makeText(this, "Car registered succesfull", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Car Repair Shop registered succesfull", Toast.LENGTH_SHORT).show();
             return true;
         } catch (Exception e) {
             e.printStackTrace();
