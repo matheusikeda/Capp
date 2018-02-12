@@ -77,11 +77,11 @@ public class ListCarRepairShopActivity extends AppCompatActivity {
                 CarRepairShop carRepairShop = (CarRepairShop) adapter.getItem(i);
                 Toast.makeText(ListCarRepairShopActivity.this, "Car Repair Shop selected: " + carRepairShop.getName(), Toast.LENGTH_SHORT).show();
 
-//                //Call EditDoctor activity passing info about the selected doctor
-//                Intent it = new Intent(ListCarActivity.this, EditDoctorActivity.class);
-//                it.putExtra("position", i);
-//                it.putExtra("doctor", (Parcelable) doctor);
-//                startActivity(it);
+                //Call EditCarRepairShop activity passing info about the selected doctor
+                Intent it = new Intent(ListCarRepairShopActivity.this, EditCarRepairShopActivity.class);
+                it.putExtra("position", i);
+                it.putExtra("carRepairShop", (Parcelable) carRepairShop);
+                startActivity(it);
             }
         });
 

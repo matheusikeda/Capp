@@ -24,7 +24,9 @@
         <activity android:name=".RegisterCarActivity" />
         <activity android:name=".RegisterCarRepairShopActivity" />
         <activity android:name=".ListCarActivity" />
-        <activity android:name=".ListCarRepairShopActivity"></activity>
+        <activity android:name=".ListCarRepairShopActivity" />
+        <activity android:name=".EditCarRepairShopActivity" />
+        <activity android:name=".EditCarActivity"></activity>
     </application>
 
 </manifest>

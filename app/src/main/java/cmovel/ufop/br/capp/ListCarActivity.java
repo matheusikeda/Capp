@@ -77,11 +77,11 @@ public class ListCarActivity extends AppCompatActivity {
                 Car car = (Car) adapter.getItem(i);
                 Toast.makeText(ListCarActivity.this, "Car selected: " + car.getModel(), Toast.LENGTH_SHORT).show();
 
-//                //Call EditDoctor activity passing info about the selected doctor
-//                Intent it = new Intent(ListCarActivity.this, EditDoctorActivity.class);
-//                it.putExtra("position", i);
-//                it.putExtra("doctor", (Parcelable) doctor);
-//                startActivity(it);
+                //Call Car activity passing info about the selected doctor
+                Intent it = new Intent(ListCarActivity.this, EditCarActivity.class);
+                it.putExtra("position", i);
+                it.putExtra("car", (Parcelable) car);
+                startActivity(it);
             }
         });
 
