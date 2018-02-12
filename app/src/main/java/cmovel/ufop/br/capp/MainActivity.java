@@ -93,7 +93,8 @@ public class MainActivity extends AppCompatActivity
             Intent it = new Intent(this, ListCarRepairShopActivity.class);
             startActivity(it);
         } else if (id == R.id.nav_manage) {
-
+            Intent it = new Intent(this, EditUserActivity.class);
+            startActivity(it);
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {

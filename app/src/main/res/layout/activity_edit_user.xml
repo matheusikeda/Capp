@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="cmovel.ufop.br.capp.EditUserActivity">
+
+    <TextView
+        android:id="@+id/name_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Full Name" />
+
+    <EditText
+        android:id="@+id/editFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rBFemale"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:checked="false"
+            android:text="Female"/>
+
+        <RadioButton
+            android:id="@+id/rBMale"
+            android:layout_width="114dp"
+            android:layout_marginTop="16dp"
+            android:layout_height="47dp"
+            android:checked="false"
+            android:text="Male"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/editUserProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="editUserProfile"
+        android:text="Save" />
+
+</LinearLayout>
