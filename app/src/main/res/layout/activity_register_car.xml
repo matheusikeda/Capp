@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#515151"
     tools:context="cmovel.ufop.br.capp.RegisterCarActivity"
     android:orientation="vertical">
 
@@ -16,25 +17,43 @@
             android:id="@+id/model"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="30dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_marginLeft="30dp"
             android:text="Model" />
 
         <EditText
             android:id="@+id/editCarModel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
             android:ems="10"
             android:inputType="textPersonName" />
 
         <TextView
             android:id="@+id/licensePlate"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
             android:text="License Plate" />
 
         <EditText
             android:id="@+id/editLicensePlate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
             android:ems="10"
             android:inputType="textPersonName" />
 
@@ -42,25 +61,45 @@
             android:id="@+id/make"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
             android:text="Make" />
 
         <EditText
             android:id="@+id/editMake"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
             android:ems="10"
             android:inputType="textPersonName" />
 
         <TextView
             android:id="@+id/year"
             android:layout_width="match_parent"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
             android:text="Year" />
 
         <EditText
             android:id="@+id/editYear"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_marginLeft="30dp"
             android:ems="10"
             android:inputType="numberSigned"/>
 
@@ -72,10 +111,20 @@
             <TextView
                 android:id="@+id/engine"
                 android:layout_width="116dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
                 android:layout_height="wrap_content"
                 android:text="Engine" />
             <Spinner
                 android:id="@+id/eSpinner"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -92,10 +141,20 @@
             <TextView
                 android:id="@+id/transmission"
                 android:layout_width="116dp"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
                 android:layout_height="wrap_content"
                 android:text="Transmission" />
             <Spinner
                 android:id="@+id/tSpinner"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:layout_marginLeft="30dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -106,9 +165,16 @@
 
         <Button
             android:id="@+id/registerCar"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
             android:layout_width="match_parent"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
             android:layout_height="wrap_content"
             android:onClick="registerCar"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/background_button"
             android:text="Register" />
     </LinearLayout>
 

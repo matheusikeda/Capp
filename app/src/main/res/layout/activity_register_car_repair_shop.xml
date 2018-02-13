@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="cmovel.ufop.br.capp.RegisterCarRepairShopActivity"
+    android:background="#515151"
     android:orientation="vertical">
 
     <LinearLayout
@@ -14,6 +15,11 @@
 
         <TextView
             android:id="@+id/name"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="30dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_marginLeft="30dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Name" />
@@ -22,11 +28,21 @@
             android:id="@+id/editName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
             android:ems="10"
             android:inputType="textPersonName" />
 
         <TextView
             android:id="@+id/location"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Location" />
@@ -35,11 +51,21 @@
             android:id="@+id/editLocation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
             android:ems="10"
             android:inputType="textPersonName" />
 
         <TextView
             android:id="@+id/phone"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_marginLeft="30dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Phone" />
@@ -48,12 +74,24 @@
             android:id="@+id/editPhone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
             android:ems="10"
             android:inputType="numberSigned"/>
 
         <Button
             android:id="@+id/registerCar"
             android:layout_width="match_parent"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="30dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/background_button"
             android:layout_height="wrap_content"
             android:onClick="registerCarRepairShop"
             android:text="Register" />

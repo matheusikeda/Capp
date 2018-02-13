@@ -20,16 +20,24 @@
             android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".RegisterUserActivity" />
-        <activity android:name=".RegisterCarActivity" />
-        <activity android:name=".RegisterCarRepairShopActivity" />
+        <activity android:name=".RegisterUserActivity"
+            android:label="Register User"/>
+        <activity android:name=".RegisterCarActivity"
+            android:label="Register Car"/>
+        <activity android:name=".RegisterCarRepairShopActivity"
+            android:label="Register Car Repair Shop"/>
         <activity android:name=".ListCarActivity" />
         <activity android:name=".ListCarRepairShopActivity" />
-        <activity android:name=".EditCarRepairShopActivity" />
-        <activity android:name=".EditCarActivity" />
-        <activity android:name=".EditUserActivity" />
-        <activity android:name=".AutoMaintenanceActivity" />
-        <activity android:name=".RegisterAutoMaintenanceActivity"></activity>
+        <activity android:name=".EditCarRepairShopActivity"
+            android:label="Edit Car Repair"/>
+        <activity android:name=".EditCarActivity"
+            android:label="Edit Car"/>
+        <activity android:name=".EditUserActivity"
+            android:label="Edit User"/>
+        <activity android:name=".AutoMaintenanceActivity"
+            android:label="Auto Maintenance"/>
+        <activity android:name=".RegisterAutoMaintenanceActivity"
+            android:label="Register Auto Maintenance"></activity>
     </application>
 
 </manifest>

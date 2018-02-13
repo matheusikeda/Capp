@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    >
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/registerCar"
@@ -13,7 +14,7 @@
         android:layout_marginBottom="16dp"
         android:layout_marginEnd="16dp"
         android:clickable="true"
-        app:backgroundTint="@android:color/holo_blue_light"
+        app:backgroundTint="#FF7F00"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/plus" />
@@ -23,6 +24,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:background="#282828"
         app:layout_constraintBottom_toTopOf="@+id/listCar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,9 +33,10 @@
         <TextView
             android:layout_width="116dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
+            android:layout_marginLeft="20dp"
             android:text="Model"
-            android:textColor="@color/colorPrimary"
+            android:textColor="#FF7F00"
+            android:textAlignment="center"
             android:textSize="18sp"
             android:textStyle="bold|italic" />
 
@@ -41,8 +44,9 @@
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:text="License Plate"
-            android:textColor="@color/colorPrimary"
+            android:textColor="#FF7F00"
             android:textSize="18sp"
+            android:textAlignment="center"
             android:textStyle="bold" />
 
     </LinearLayout>

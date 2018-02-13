@@ -4,18 +4,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#515151"
     tools:context="cmovel.ufop.br.capp.RegisterAutoMaintenanceActivity">
 
     <TextView
         android:id="@+id/name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/colorPrimary"
-        android:textSize="18sp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/date"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_marginLeft="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Date" />
@@ -23,6 +32,11 @@
 
     <EditText
         android:id="@+id/editDate"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -30,6 +44,11 @@
 
     <TextView
         android:id="@+id/expiration"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Expiration Date" />
@@ -38,6 +57,11 @@
         android:id="@+id/editExpiration"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
         android:ems="10"
         android:inputType="textPersonName" />
 
@@ -45,17 +69,34 @@
         android:id="@+id/price"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
         android:text="Price" />
 
     <EditText
         android:id="@+id/editPrice"
         android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_marginLeft="30dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="numberDecimal" />
 
     <Button
         android:id="@+id/registerMaintenance"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:background="@drawable/background_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="registerMaintenance"

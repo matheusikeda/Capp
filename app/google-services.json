@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "66464579196-g8j21kep9l2ikobqpvscnhae04sna4ft.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "cmovel.ufop.br.capp",
+            "certificate_hash": "abc81dd86ce8ecb7a98849a58fff19b8bce34d89"
+          }
+        },
+        {
           "client_id": "66464579196-7kgfvv471tagphtajsk14vvraut87r9o.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
