@@ -7,19 +7,19 @@
         <item
             android:id="@+id/nav_camera"
             android:icon="@drawable/ic_menu_camera"
-            android:title="Register User" />
+            android:title="Cars" />
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Cars" />
+            android:title="Car Repair" />
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Car Repair" />
+            android:title="-" />
         <item
             android:id="@+id/nav_manage"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Edit User" />
+            android:title="-" />
     </group>
 
     <item android:title="Maintenance" >
@@ -27,7 +27,7 @@
             <item
                 android:id="@+id/nav_share"
                 android:icon="@drawable/ic_menu_share"
-                android:title="New Auto Maintenance" />
+                android:title="-" />
             <item
                 android:id="@+id/nav_send"
                 android:icon="@drawable/ic_menu_send"

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#515151"
     android:orientation="vertical">
 
     <android.support.design.widget.FloatingActionButton
@@ -13,7 +14,7 @@
         android:layout_marginBottom="16dp"
         android:layout_marginEnd="16dp"
         android:clickable="true"
-        app:backgroundTint="@android:color/holo_blue_light"
+        app:backgroundTint="#FF7F00"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/plus"
@@ -22,6 +23,7 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
+        android:background="#282828"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/listCar"
@@ -35,7 +37,7 @@
             android:text="Name"
             android:layout_marginLeft="30dp"
             android:textSize="18sp"
-            android:textColor="@color/colorPrimary"
+            android:textColor="#FF7F00"
             android:textStyle="bold" />
 
         <TextView
@@ -43,7 +45,7 @@
             android:layout_height="wrap_content"
             android:text="Location"
             android:textSize="18sp"
-            android:textColor="@color/colorPrimary"
+            android:textColor="#FF7F00"
             android:textStyle="bold" />
 
         <TextView
@@ -51,7 +53,7 @@
             android:layout_height="wrap_content"
             android:text="Phone"
             android:textSize="18sp"
-            android:textColor="@color/colorPrimary"
+            android:textColor="#FF7F00"
             android:textStyle="bold" />
 
 

@@ -84,20 +84,20 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_camera) {
             // Handle the camera action
 
-            Intent it = new Intent(this, RegisterUserActivity.class);
-            startActivity(it);
-        } else if (id == R.id.nav_gallery) {
             Intent it = new Intent(this, ListCarActivity.class);
             startActivity(it);
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_gallery) {
             Intent it = new Intent(this, ListCarRepairShopActivity.class);
             startActivity(it);
+        } else if (id == R.id.nav_slideshow) {
+            //Intent it = new Intent(this, ListCarRepairShopActivity.class);
+            //startActivity(it);
         } else if (id == R.id.nav_manage) {
-            Intent it = new Intent(this, EditUserActivity.class);
-            startActivity(it);
+            //Intent it = new Intent(this, EditUserActivity.class);
+            //startActivity(it);
         } else if (id == R.id.nav_share) {
-            Intent it = new Intent(this, AutoMaintenanceActivity.class);
-            startActivity(it);
+            //Intent it = new Intent(this, AutoMaintenanceActivity.class);
+            //startActivity(it);
         } else if (id == R.id.nav_send) {
 
         }

@@ -20,7 +20,7 @@
             android:layout_marginTop="60dp"
             android:layout_marginRight="30dp"
             android:textColor="#ffffff"
-            android:textSize="20sp"
+            android:textSize="16sp"
             android:layout_marginLeft="30dp"
             android:text="Name" />
 
@@ -32,7 +32,7 @@
             android:layout_marginRight="30dp"
             android:layout_marginLeft="30dp"
             android:textColor="#ffffff"
-            android:textSize="20sp"
+            android:textSize="16sp"
             android:ems="10"
             android:inputType="textPersonName" />
 
@@ -44,7 +44,7 @@
             android:layout_marginRight="30dp"
             android:layout_marginLeft="30dp"
             android:textColor="#ffffff"
-            android:textSize="20sp"
+            android:textSize="16sp"
             android:text="Location" />
 
         <EditText
@@ -55,7 +55,7 @@
             android:layout_marginRight="30dp"
             android:layout_marginLeft="30dp"
             android:textColor="#ffffff"
-            android:textSize="20sp"
+            android:textSize="16sp"
             android:ems="10"
             android:inputType="textPersonName" />
 
@@ -66,7 +66,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginRight="30dp"
             android:textColor="#ffffff"
-            android:textSize="20sp"
+            android:textSize="16sp"
             android:layout_marginLeft="30dp"
             android:text="Phone" />
 
@@ -77,7 +77,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginRight="30dp"
             android:textColor="#ffffff"
-            android:textSize="20sp"
+            android:textSize="16sp"
             android:layout_marginLeft="30dp"
             android:ems="10"
             android:inputType="numberSigned"/>
@@ -88,7 +88,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:textColor="#ffffff"
-            android:textSize="20sp"
+            android:textSize="16sp"
             android:layout_marginRight="30dp"
             android:layout_marginLeft="30dp"
             android:background="@drawable/background_button"
@@ -103,7 +103,7 @@
             android:background="@drawable/background_button"
             android:layout_marginRight="30dp"
             android:textColor="#ffffff"
-            android:textSize="20sp"
+            android:textSize="16sp"
             android:layout_marginLeft="30dp"
             android:onClick="deleteCarRepairShop"
             android:text="Delete" />
