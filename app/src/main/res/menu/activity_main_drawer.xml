@@ -6,24 +6,19 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Cars" />
-        <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Car Repair" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="-" />
-        <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="-" />
+            android:icon="@drawable/car"
+            android:title="My Car" />
+         />
+
     </group>
 
     <item android:title="Maintenance" >
         <menu>
+            <item
+                android:id="@+id/nav_gallery"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="Car Repair"></item>
+
             <item
                 android:id="@+id/nav_share"
                 android:icon="@drawable/ic_menu_share"
